@@ -1,10 +1,6 @@
 ---
 layout: page
-title: About
+title: About me
 ---
 
-This is the basic Bridgetown site template. You can find out more info about customizing your Bridgetown site, as well as basic Bridgetown usage documentation at [bridgetownrb.com](https://bridgetownrb.com/)
-
-You can find the source code for Bridgetown at GitHub:
-[bridgetownrb](https://github.com/bridgetownrb) /
-[bridgetown](https://github.com/bridgetownrb/bridgetown)
+My name is Josh Jones. I am a determined life-long learner and creator, as passionate about well-designed technology and software products as I am about meticulously crafted music and Japanese language learning. I love to take on new challenges and learn new domains that interest me. I also enjoy putting together experiments and sharing what I've learned along the way with others.
