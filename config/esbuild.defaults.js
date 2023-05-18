@@ -6,7 +6,7 @@
 // when an update is applied hence we strongly recommend adding overrides to
 // `esbuild.config.js` instead of editing this file.
 //
-// Shipped with Bridgetown v1.2.0
+// Shipped with Bridgetown v1.3.0.beta1
 
 const path = require("path")
 const fsLib = require("fs")
