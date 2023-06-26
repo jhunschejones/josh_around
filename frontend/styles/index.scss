@@ -132,10 +132,16 @@ hr {
 
 // make post subheaders into hash links
 .post {
+  .action-header {
+    color: var(--action-color);
+  }
   h2, h3, h4 {
     width: fit-content;
     &:hover {
       cursor: pointer;
     }
+  }
+  h3, h4 {
+    margin-bottom: -6px;
   }
 }
