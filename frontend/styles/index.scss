@@ -75,7 +75,7 @@ body > nav a {
 main {
   position: relative;
   margin: 2rem auto 4rem;
-  max-width: 65rem;
+  max-width: 58rem;
   min-height: calc(70vh - 200px);
   padding: 25px 35px 50px 35px;
   background: white;
@@ -143,5 +143,17 @@ hr {
   }
   h3, h4 {
     margin-bottom: -6px;
+  }
+}
+
+.about {
+  .headshot-container {
+    display: flex;
+    justify-content: center;
+    margin-top: -15px;
+    margin-bottom: 35px;
+    .headshot {
+      max-width: 270px;
+    }
   }
 }
