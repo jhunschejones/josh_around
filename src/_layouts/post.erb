@@ -4,4 +4,11 @@ layout: default
 
 <h1><%= data.title %></h1>
 
+<div class="tags">
+  <% data.tags.each_with_index do |tag, index| %>
+    <% tag_text = index < data.tags.size - 1 ? "#{tag}," : tag %>
+    <%= link_to tag_text, "/tags/#{tag}" %>
+  <% end %>
+</div>
+
 <%= yield %>

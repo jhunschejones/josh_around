@@ -130,8 +130,21 @@ hr {
   }
 }
 
-// make post subheaders into hash links
 .post {
+  .tags {
+    display: flex;
+    justify-content: center;
+    margin-top: -38px;
+    margin-bottom: 50px;
+    a {
+      margin: 0px 2px;
+      color: #bbb;
+      text-decoration-color: #bbb;
+      // font-style: italic;
+    }
+  }
+
+  // make post subheaders into hash links
   .action-header {
     color: var(--action-color);
   }

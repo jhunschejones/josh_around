@@ -2,7 +2,9 @@
 layout: post
 title: "Everything In My Bag"
 date: 2023-06-25 12:00:00 -0500
-categories: travel
+tags:
+- travel
+- minimalism
 ---
 
 In 2024 I am embarking on a new adventure and moving from the United States to Japan. To prepare for the biggest move of my life to date, I began by investigating what I would need to bring for a smooth trip and (mostly) painless transition in a new country. Then, I tested my gear on a handful of 1-2 week trips within the United States in 2023, continuing to hone my travel rig to smooth out the rough edges.
