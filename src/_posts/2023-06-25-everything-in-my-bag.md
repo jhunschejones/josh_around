@@ -49,15 +49,15 @@ This list is still evolving as of the first publication of this blog post. My pl
 9. Lululemon Pace Breaker Linerless Short 9" (gym shorts)
 10. Old Navy swim trunks
 11. Boxer Briefs (3 packed, 1 worn)
-	* Smartwool Men's Merino Boxer Brief (88% Merino), 2x
+	* (2x) Smartwool Men's Merino Boxer Brief (88% Merino)
 	* Unbound Merino Merino Wool Boxer Briefs
 	* Wool & Prince Boxer Briefs, regular 4.5" inseam
 12. Smartwool Men's Merino Boxer (88% Merino) - for sleep
 13. Running socks (4 packed, 1 worn)
-	* Smartwool Run Targeted Cushion Low Ankle Socks, 2x
-	* Darn Tough Men's Run No Show Tab Ultra-Lightweight Running Sock + Cushon, 2x
-	* Hike Light Cushion Low Ankle Socks, 1x
-14. Nike Air Zoom Structure 24 Running shoes (1 packed, 1 worn)
+	* (2x) Smartwool Run Targeted Cushion Low Ankle Socks
+	* (2x) Darn Tough Men's Run No Show Tab Ultra-Lightweight Running Sock + Cushon
+	* Hike Light Cushion Low Ankle Socks
+14. 2 pairs Allbirds Tree Dasher 2 Running Shoes (1 packed, 1 worn)
 15. Old Navy flip flops
 16. Chacos Z1 Classic
 17. Arcade Mens Adventure Midnighter Belt (1 packed, 1 worn)
@@ -89,7 +89,7 @@ This list is still evolving as of the first publication of this blog post. My pl
 9. Ethique deodorant
 10. Soak scentless laundry detergent in Humangear	GoTube 3.4oz bottle
 11. Earplugs
-12. Mint strips
+12. Listerine mint strips
 13. Lysine
 14. Allergy medicine
 15. Masks
