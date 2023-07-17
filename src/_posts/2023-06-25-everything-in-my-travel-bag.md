@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Everything In My Bag"
+title: Everything in my travel bag
 date: 2023-06-25 12:00:00 -0500
 tags:
 - travel

@@ -107,8 +107,11 @@ hr {
 }
 
 .posts {
-  list-style-type: none;
   padding: 0;
+  li {
+    list-style-type: none;
+    padding-bottom: 5px;
+  }
 }
 
 .pagination {

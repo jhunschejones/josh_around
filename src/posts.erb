@@ -8,7 +8,7 @@ paginate:
 <ul class="posts">
   <% paginator.resources.each do |post| %>
     <li>
-      <a href="<%= post.relative_url %>"><%= post.data.title %></a>
+      <a href="<%= post.relative_url %>"><%= post.data.title.titleize %></a>
     </li>
   <% end %>
 </ul>
