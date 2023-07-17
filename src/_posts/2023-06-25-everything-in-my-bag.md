@@ -24,7 +24,7 @@ One of the biggest changes I made in 2023 to prepare for this trip was to switch
 #### Body care products update 🧼
 {: .action-header}
 
-Another, smaller but equally helpful change I went through was with body care products. In 2023 I changed from liquid shampoo and conditioner to solid shampoo and conditioner. Not only does this help me contribute less plastics back into the world, but it also helps my travel rig last longer as I no longer have to worry about liquid limits when packing soap. I went through a similar change with deodorant. After years as a heavy antiperspirant user, I changed to a regular, natural deodorant. Again, this is one less plastic item that I need to buy and dispose of, but more importantly, my skin is much healthier and it takes much less work to keep my shirts clean *(antiperspirant in the quantities I was using it used to leave hard to remove stains in all my shirts.)*
+Another, smaller but equally helpful change I went through was with body care products. In 2023 I changed from liquid shampoo and conditioner to solid shampoo and conditioner. Not only does this help me contribute less plastics back into the world, but it also helps my travel rig last longer as I no longer have to worry about liquid limits when packing soap. I went through a similar change with deodorant. After years as a heavy antiperspirant user, I changed to a regular, natural deodorant. Again, this is one less plastic item that I need to buy and dispose of, but more importantly, my skin is much healthier and it takes much less work to keep my shirts clean *(I found antiperspirant would leave hard-to-remove stains on shirts in the past.)*
 
 #### So, what am I actually bringing?
 {: .action-header}
