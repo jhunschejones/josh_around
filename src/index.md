@@ -4,5 +4,5 @@ layout: default
 
 # Welcome to my blog
 
-<h1 style="font-size: 80px; margin: -25px 0 25px 0px;">🚧</h1>
-I am working on putting together a shiny new personal blog where I can share things I've been learning, updates on new adventures, and much more. Stay tuned for updates soon!
+<h1 style="margin: -25px 0 25px 0px;" class="emoji-header">💻🎧🍜🏔️🎒</h1>
+ようこそ, Welcome to my blog! From coding to music production, Japanese language learning to hiking and travel, I love experimenting, learning, and sharing my experiences with others. Learn a little more <a href="/about">about me</a> or check out my <a href="/posts">posts</a> where I go into more depth on all these topics and more. Thanks for joining me, I hope you find something helpful here for your own adventures.

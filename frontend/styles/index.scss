@@ -34,6 +34,13 @@ h1 {
   line-height: 1.2;
 }
 
+.emoji-header {
+  font-size: 80px;
+  @media (max-width: 600px) {
+    font-size: 60px;
+  }
+}
+
 // styles for site title header
 body > header {
   margin: 1rem;
