@@ -73,7 +73,7 @@ body > nav ul {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  font-size: 1.3rem;
+  font-size: 22px;
   font-weight: bold;
 }
 
@@ -147,6 +147,7 @@ hr {
     margin-bottom: 35px;
     .headshot {
       max-width: 270px;
+      box-shadow: 0 3px 6px #ddd, 0 3px 6px #ddd;
     }
   }
 }
