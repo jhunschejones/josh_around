@@ -16,3 +16,5 @@ for (const subheader of subheaders) {
   // change with page reload
   subheader.addEventListener("click", () => window.location.hash = subheader.id);
 }
+
+document.querySelector(".js-youtube-button").addEventListener("click", () => window.open("https://www.youtube.com/@josh_around/videos", "_blank"));

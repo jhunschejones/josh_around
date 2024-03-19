@@ -1,3 +1,5 @@
+@import "utilities", "components", "posts";
+
 :root {
   --body-background: #f2f2f2;
   --body-color: #444;
@@ -8,12 +10,16 @@
 body {
   background: var(--body-background);
   color: var(--body-color);
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    "Helvetica", "Arial", sans-serif;
+  font-family: "Figtree", sans-serif;
   margin: 0 8px;
-  font-size: 108%;
+  font-size: 18px;
   line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 a {
@@ -52,21 +58,22 @@ body > header {
   }
 
   h1 {
+    margin: 0;
     @media (max-width: 500px) {
       margin: 0.5rem;
     }
   }
 }
 
-// styles for nav items
+// styles for main nav
 body > nav ul {
-  margin: 2rem 0;
+  margin: 1.5rem 0;
   padding: 0;
   list-style-type: none;
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  font-size: 1.3rem;
+  font-size: 22px;
   font-weight: bold;
 }
 
@@ -113,14 +120,6 @@ hr {
   margin: 3rem 0;
 }
 
-.posts {
-  padding: 0;
-  li {
-    list-style-type: none;
-    padding-bottom: 5px;
-  }
-}
-
 .pagination {
   padding: 0;
   list-style-type: none;
@@ -140,36 +139,6 @@ hr {
   }
 }
 
-.post {
-  .tags {
-    display: flex;
-    justify-content: center;
-    margin-top: -38px;
-    margin-bottom: 50px;
-    a {
-      color: #bbb;
-      text-decoration-color: #bbb;
-      &:not(:first-child) {
-        padding-left: 5px;
-      }
-    }
-  }
-
-  // make post subheaders into hash links
-  .action-header {
-    color: var(--action-color);
-  }
-  h2, h3, h4 {
-    width: fit-content;
-    &:hover {
-      cursor: pointer;
-    }
-  }
-  h3, h4 {
-    margin-bottom: -6px;
-  }
-}
-
 .about {
   .headshot-container {
     display: flex;
@@ -178,6 +147,7 @@ hr {
     margin-bottom: 35px;
     .headshot {
       max-width: 270px;
+      box-shadow: 0 3px 6px #ddd, 0 3px 6px #ddd;
     }
   }
 }
