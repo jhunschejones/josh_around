@@ -5,6 +5,6 @@
 # in the templates via {{ site.metadata.myvariable }}.
 
 title: Josh Around
-tagline: A blog about adventure and learning
+tagline: My home for adventure and learning
 email: hey@josharound.com
 description:
