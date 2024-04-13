@@ -139,6 +139,19 @@ hr {
   }
 }
 
+.videos {
+  .photo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: -15px;
+    margin-bottom: 35px;
+    .photo {
+      max-width: 325px;
+      box-shadow: 0 3px 6px #ddd, 0 3px 6px #ddd;
+    }
+  }
+}
+
 .about {
   .headshot-container {
     display: flex;
