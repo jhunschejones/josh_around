@@ -149,44 +149,59 @@ hr {
   }
 }
 
+.photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+
+  .photo-container {
+    flex-basis: 400px; /*width: 400px;*/
+    @media (max-width: 896px) {
+      flex-basis: 325px; /*width: 325px;*/
+    }
+    position: relative;
+
+    .photo {
+      object-fit: cover;
+      max-width: 100%;
+      height: auto;
+      vertical-align: middle;
+
+      box-shadow: 0 3px 6px #ddd, 0 3px 6px #ddd;
+    }
+  }
+}
+
 .videos {
-  .photo-gallery {
-    margin-top: -10px;
-    margin-bottom: 35px;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-
-    .photo-container {
-      flex-basis: 400px; /*width: 400px;*/
-      @media (max-width: 896px) {
-        flex-basis: 325px; /*width: 325px;*/
-      }
+  .video-gallery {
+    margin-top: -35px;
+    padding: 20px;
+    @media (max-width: 500px) {
+      padding: 5px;
+      margin-top: -25px;
+    }
+    .video-container {
       position: relative;
-
-      .photo {
-        object-fit: cover;
-        max-width: 100%;
-        height: auto;
-        vertical-align: middle;
-
-        box-shadow: 0 3px 6px #ddd, 0 3px 6px #ddd;
+      display: block;
+      overflow: hidden;
+      height: 0px;
+      padding-bottom: 56.25%;
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
       }
     }
   }
 }
 
 .about {
-  .headshot-container {
-    display: flex;
-    justify-content: center;
+  .headshot {
     margin-top: -15px;
     margin-bottom: 35px;
-    .headshot {
-      max-width: 400px;
-      box-shadow: 0 3px 6px #ddd, 0 3px 6px #ddd;
-    }
   }
 }
