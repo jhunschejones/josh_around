@@ -5,7 +5,7 @@ title: Videos
 
 <div class="video-gallery">
   <div class="video-container">
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9DWPQzEZrGQ?si=rya0kPQTcINvF0nO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9DWPQzEZrGQ?si=rya0kPQTcINvF0nO&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
 </div>
 
