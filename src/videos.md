@@ -11,5 +11,5 @@ I enjoy crafting beautiful videos and sharing stories about the things I've lear
 Please stop by and and watch some whenever you like! 🍿
 
 <div class="d-flex">
-  <button class="cta-button js-youtube-button">Visit my YouTube channel</button>
+  <button class="cta-button js-youtube-button">Visit me on YouTube ✨</button>
 </div>
