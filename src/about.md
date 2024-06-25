@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-headshot: Josh_Jones_headshot.jpeg
+headshot: DSC05633_EDIT2_SQUARE.jpg
 ---
 
 ![A headshot of me, Josh Jones](/images/<%= data.headshot %>){: .headshot}
