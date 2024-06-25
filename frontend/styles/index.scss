@@ -147,14 +147,27 @@ hr {
 }
 
 .videos {
-  .photo-container {
-    display: flex;
-    justify-content: center;
-    margin-top: -15px;
+  .photo-gallery {
+    margin-top: -10px;
     margin-bottom: 35px;
-    .photo {
-      max-width: 325px;
-      box-shadow: 0 3px 6px #ddd, 0 3px 6px #ddd;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+    .photo-container {
+      flex-basis: 325px; /*width: 325px;*/
+      position: relative;
+
+      .photo {
+        object-fit: cover;
+        max-width: 100%;
+        height: auto;
+        vertical-align: middle;
+
+        box-shadow: 0 3px 6px #ddd, 0 3px 6px #ddd;
+      }
     }
   }
 }
