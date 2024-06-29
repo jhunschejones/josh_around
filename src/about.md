@@ -2,7 +2,7 @@
 layout: page
 title: About me
 photos:
-- image: DSC05633_EDIT2_MD.jpeg
+- image: DSC05633_Lightroom 5_XS.jpeg
   alt: A headshot of Josh Jones smiling in front of a nature background
 - image: DSC01864_EDIT_SM.jpeg
   alt: "Josh holding a camera looking into a mirror"
