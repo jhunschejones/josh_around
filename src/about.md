@@ -16,4 +16,14 @@ photos:
   <% end %>
 </div>
 
-Hey there! 👋🏻 My name is Josh Jones. I am a determined life-long learner and creator, as passionate about well-designed technology and software products as I am about meticulously crafted music and Japanese language learning. I love to take on new challenges and learn new domains that interest me. I also enjoy putting together experiments and sharing what I've learned along the way with others. Thanks for joining me on my journey!
+Hey, I'm Josh! 👋🏻
+
+I am a determined life-long learner and creator, passionate about well-designed and meticulously crafted music, film, software, and more. I love to take on new challenges and learn new domains, and I enjoy sharing what I've learned with others.
+
+In 2024 I moved from my home in Chicago to Tokyo to attend language school. While in school I studied intermediate and advanced Japanese and made friends who helped me expand the way I see the world. Check out my <a href="/videos">videos</a> to see some of my most recent adventures.
+
+Thanks for joining me on my journey!
+
+<span class="hide-on-small">
+  Josh
+</span>
