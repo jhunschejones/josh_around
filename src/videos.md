@@ -9,8 +9,8 @@ title: Videos
   </div>
 </div>
 
-I enjoy crafting beautiful videos and sharing stories about the things I've learned on my adventures. I'm currently creating videos on the <a href="https://www.youtube.com/@josh_around/videos" target="_blank">@josh_around</a>  YouTube channel.
-Please stop by and and watch some whenever you like! 🍿
+I am passionate about crafting uplifting videos and sharing meaningful stories about the things I've learned and ways I've grown. My aim is to add value and provide inspiration for the friendly folks in my little community. I'm currently uploading my videos on the YouTube at <a href="https://www.youtube.com/@josh_around/videos" target="_blank">@josh_around</a>.
+Please stop by and and watch some whenever you like, they are constantly being updated! 🍿
 
 <div class="d-flex">
   <button class="cta-button js-youtube-button">Visit me on YouTube ✨</button>

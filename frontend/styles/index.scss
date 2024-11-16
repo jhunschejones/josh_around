@@ -1,4 +1,4 @@
-@import "utilities", "components", "posts";
+@import "utilities", "components", "posts", "home";
 
 :root {
   // using the Zinc color palate from tailwind
@@ -13,8 +13,11 @@ body {
   color: var(--body-color);
   font-family: "Figtree", sans-serif;
   margin: 0 8px;
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  @media (max-width: 500px) {
+    font-size: 1.2rem;
+  }
 }
 
 h1, h2, h3, h4, h5 {
@@ -99,15 +102,19 @@ body > nav a {
 main {
   position: relative;
   margin: 1rem auto 3rem;
-  max-width: 58rem;
+  max-width: 46rem;
   min-height: calc(70vh - 200px);
-  padding: 25px 35px 50px 35px;
+  padding: 8px 45px 25px 45px;
   background: white;
-  box-shadow: 0 3px 6px #ddd, 0 3px 6px #ddd;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
   border-radius: 3px;
+  text-align: justify;
+  @media (max-width: 390px) {
+    text-align: center;
+  }
 
   @media (max-width: 500px) {
-    padding: 16px 16px 50px;
+    padding: 8px 19px;
     min-height: calc(85vh - 200px);
     margin-bottom: 2rem;
   }
@@ -156,7 +163,7 @@ hr {
   gap: 10px;
 
   .photo-container {
-    flex-basis: 400px; /*width: 400px;*/
+    flex-basis: 360px; /*width: 400px;*/
     @media (max-width: 896px) {
       flex-basis: 325px; /*width: 325px;*/
     }
@@ -203,5 +210,11 @@ hr {
   .headshot {
     margin-top: -15px;
     margin-bottom: 35px;
+  }
+
+  .hide-on-small {
+    @media (max-width: 500px) {
+      display: none;
+    }
   }
 }
