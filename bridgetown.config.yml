@@ -35,8 +35,8 @@ pagination:
 
 # disable pages from the 2024 static site
 exclude:
-# - about
-# - videos
+- about
+- videos
 
 # disable blog posts from the origional 2023 site builder
 collections:

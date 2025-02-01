@@ -1,3 +1,10 @@
+.hero-image {
+  background-image: url('/images/DSC00211-Enhanced-NR-6_MD.jpeg'); /* Reference your uploaded image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Full viewport height for the hero section */
+}
+
 .hero-container {
   margin-left: -8px;
   margin-right: -8px;
