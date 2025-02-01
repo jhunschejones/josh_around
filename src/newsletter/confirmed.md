@@ -1,5 +1,5 @@
 ---
-layout: patreon
+layout: newsletter
 ---
 
 <h1 class="text-3xl font-semibold text-cyan-600">You're In! 🎉</h1>
