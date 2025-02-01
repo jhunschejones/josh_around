@@ -9,7 +9,14 @@ layout: newsletter
 
 <!-- Signup Form -->
 <form action="https://buttondown.email/api/emails/embed-subscribe/josh_around" method="post" class="mt-6">
-  <input type="email" name="email" placeholder="Enter your email" required
+  <!-- Name Input -->
+  <input type="text" name="metadata__name" id="name" placeholder="Your Name" required
+    data-1p-ignore data-lpignore="true"
+    class="w-full p-3 border border-gray-300 bg-gray-200 rounded-md text-gray-800 focus:ring-2 focus:ring-pink-500 focus:outline-none mb-4">
+
+  <!-- Email Input -->
+  <input type="email" name="email" id="bd-email" placeholder="Your Email"
+    required data-1p-ignore data-lpignore="true"
     class="w-full p-3 border border-gray-300 bg-gray-200 rounded-md text-gray-800 focus:ring-2 focus:ring-pink-500 focus:outline-none">
 
   <button type="submit"
