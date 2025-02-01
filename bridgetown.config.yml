@@ -17,7 +17,7 @@
 # https://learnxinyminutes.com/docs/yaml/
 #
 
-url: "" # the base hostname & protocol for your site, e.g. https://example.com
+url: "https://www.josharound.com" # the base hostname & protocol for your site, e.g. https://example.com
 
 permalink: pretty
 template_engine: erb
@@ -32,3 +32,13 @@ template_engine: erb
 timezone: America/Chicago
 pagination:
   enabled: true
+
+# disable pages from the 2024 static site
+exclude:
+# - about
+# - videos
+
+# disable blog posts from the origional 2023 site builder
+collections:
+  posts:
+    output: false
