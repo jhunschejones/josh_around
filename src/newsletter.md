@@ -4,7 +4,7 @@ layout: newsletter
 
 <h1 class="text-3xl font-semibold text-cyan-600">Stay in the Loop</h1>
 <p class="text-gray-500 mt-4 max-w-md mx-auto leading-relaxed">
-  Once a month, I’ll send you an update on what I’ve been creating—videos, projects, and anything new. You’ll also be the first to know about any big changes!
+  📬 Once a month, I’ll send you a little update on what I’ve been creating—videos 🎥, projects ✨, and anything new. You’ll also be the first to know about any big changes! 🚀
 </p>
 
 <!-- Signup Form -->
