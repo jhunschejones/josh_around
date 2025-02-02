@@ -3,6 +3,17 @@
   background-size: cover;
   background-position: center;
   height: 100vh; /* Full viewport height for the hero section */
+  @media (max-width: 434px), (max-height: 670px) { /* this is how you write an OR clause rule */
+    background: none;
+    height: auto;
+
+    .custom-w-full {
+      width: 100%; /* Full width for small screens */
+    }
+    .custom-h-full {
+      height: 100%; /* Full width for small screens */
+    }
+  }
 }
 
 .hero-container {

@@ -28,7 +28,7 @@ layout: newsletter
 <!-- Patreon Button -->
 <a href="https://www.patreon.com/josh_around" target="_blank"
   class="mt-4 inline-block w-full bg-indigo-500 text-white font-semibold py-3 rounded-md hover:bg-indigo-400 transition">
-    Support on Patreon
+  Support on Patreon
 </a>
 
 <!-- Privacy Note -->
