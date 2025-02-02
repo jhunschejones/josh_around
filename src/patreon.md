@@ -32,7 +32,7 @@ layout: newsletter
 <!-- Direct Patreon Link -->
 <div class="mt-6">
   <p class="text-gray-500 text-sm">Already on the list?</p>
-  <a href="https://www.patreon.com/josh_around" target="_blank" class="text-cyan-600 hover:text-cyan-500 text-sm underline">
+  <a href="https://www.patreon.com/josh_around" target="_blank" class="text-cyan-600 hover:text-cyan-500 text-sm underline decoration-cyan-600 hover:decoration-cyan-500">
     Go directly to Patreon
   </a>
 </div>

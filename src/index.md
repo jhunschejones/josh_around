@@ -41,6 +41,9 @@ layout: home
           Subscribe
         </button>
       </form>
+
+      <!-- Privacy Note -->
+      <p class="text-xs text-gray-500 mt-4">No spam. Unsubscribe anytime.</p>
     </div>
   </div>
 </div>
