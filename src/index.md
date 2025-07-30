@@ -8,15 +8,15 @@ layout: home
   <div class="bg-white shadow-lg rounded-lg p-8 w-11/12 custom-w-full max-w-xl text-center border border-gray-300 custom-h-full">
     <h1 class="text-6xl font-bold text-cyan-600">Josh Around</h1>
     <p class="text-lg text-gray-600 mt-4">
-      ✨ Welcome to my cozy corner of the internet! I create thoughtful 🌙, adventurous 🌍 content and share my journey through videos ☕️, stories 📖, and learning experiences 📚.
+      ✨ Welcome to my little corner of the internet! ✨ I make thoughtful content about learning Japanese, exploring new places, and sharing what I pick up along the way. 🎥
     </p>
 
     <!-- Call to Action Buttons -->
     <div class="mt-8 flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4">
-      <a href="https://www.patreon.com/josh_around" target="_blank"
+      <!-- <a href="https://www.patreon.com/josh_around" target="_blank"
         class="bg-pink-500 text-white font-semibold py-3 px-6 rounded-md hover:bg-pink-400 transition" >
         Support on Patreon
-      </a>
+      </a> -->
       <a href="https://www.youtube.com/@josh_around" target="_blank"
         class="bg-indigo-500 text-white font-semibold py-3 px-6 rounded-md hover:bg-indigo-400 transition" >
         Watch on YouTube
