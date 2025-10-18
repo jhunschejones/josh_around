@@ -2,13 +2,27 @@
 layout: default
 ---
 
-<h1><%= data.title.titleize %></h1>
+<article>
+  <header class="mb-6 border-b border-dotted border-zinc-300 dark:border-zinc-700 pb-3">
+    <h1 class="text-2xl font-semibold mb-1">
+      <%= resource.data.title %>
+    </h1>
+    <% if resource.date %>
+      <time datetime="<%= resource.date.iso8601 %>"
+            class="block text-sm text-zinc-600 dark:text-zinc-400">
+        <%= resource.date.strftime("%B %e, %Y") %>
+      </time>
+    <% end %>
+  </header>
 
-<div class="tags">
-  <% data.tags.each_with_index do |tag, index| %>
-    <% tag_text = index < data.tags.size - 1 ? "#{tag}," : tag %>
-    <%= link_to tag_text, "/tags/#{tag}" %>
-  <% end %>
-</div>
+  <section class="leading-relaxed text-base space-y-4 prose">
+    <%= yield %>
+  </section>
 
-<%= yield %>
+  <footer class="mt-8 pt-4 border-t border-dotted border-zinc-300 dark:border-zinc-700 text-sm text-zinc-600 dark:text-zinc-400">
+    <a href="<%= site.base_path || "/" %>"
+       class="underline decoration-1 text-pink-600 dark:text-pink-400 hover:no-underline">
+      ← Back to all posts
+    </a>
+  </footer>
+</article>

@@ -1,16 +1,23 @@
 ---
+layout: default
+title: "404 – Page Not Found"
 permalink: /404.html
-layout: newsletter
 ---
 
-<h1 class="text-4xl font-semibold text-cyan-600">404</h1>
-<p class="text-gray-600 mt-4 max-w-md mx-auto leading-relaxed">
-    Oops! The page you're looking for doesn't exist.
-    It might have been moved, or maybe it never existed at all.
-</p>
+<section class="text-center py-24">
+  <h1 class="text-4xl font-semibold mb-3">
+    404
+  </h1>
+  <p class="text-base text-zinc-700 dark:text-zinc-300 mb-8">
+    Sorry — the page you were looking for couldn’t be found.
+  </p>
 
-<a href="/" class="mt-6 inline-block bg-pink-500 text-white font-semibold py-3 px-6 rounded-md hover:bg-pink-400 transition">
-    Go Home
-</a>
+  <a href="<%= site.base_path || "/" %>"
+     class="underline decoration-1 text-pink-600 dark:text-pink-400 hover:no-underline">
+    ← Back to Josh Around
+  </a>
 
-<p class="text-sm text-gray-500 mt-4">Or check out my <a href="https://www.youtube.com/@josh_around" class="text-indigo-500 hover:text-indigo-400">YouTube</a>!</p>
+  <div class="mt-12 text-xs text-zinc-500 dark:text-zinc-400">
+    If you think this is a mistake, try refreshing or check the URL.
+  </div>
+</section>

@@ -1,0 +1,50 @@
+---
+layout: default
+title: "Newsletter"
+permalink: /newsletter/
+---
+
+<section class="max-w-md mx-auto text-center py-24">
+  <h1 class="text-3xl font-semibold text-cyan-600 dark:text-cyan-400 mb-4">
+    Stay in the Loop
+  </h1>
+
+  <p class="text-zinc-700 dark:text-zinc-300 leading-relaxed mb-8">
+    📬 Once a month, I’ll send a short update on what I’ve been creating lately — videos 🎥,
+    projects ✨, and anything new. You’ll also be the first to know about any big changes! 🚀
+  </p>
+
+  <%# Signup Form %>
+  <form action="https://buttondown.email/api/emails/embed-subscribe/josh_around"
+        method="post"
+        class="text-left max-w-md mx-auto">
+    <label for="name" class="sr-only">Your Name</label>
+    <input type="text"
+           name="metadata__name"
+           id="name"
+           placeholder="Your Name"
+           required
+           data-1p-ignore
+           data-lpignore="true"
+           class="w-full p-3 border border-zinc-300 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 rounded-md text-zinc-900 dark:text-zinc-100 focus:ring-2 focus:ring-pink-500 focus:outline-none mb-4">
+
+    <label for="bd-email" class="sr-only">Your Email</label>
+    <input type="email"
+           name="email"
+           id="bd-email"
+           placeholder="Your Email"
+           required
+           data-1p-ignore
+           data-lpignore="true"
+           class="w-full p-3 border border-zinc-300 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 rounded-md text-zinc-900 dark:text-zinc-100 focus:ring-2 focus:ring-pink-500 focus:outline-none">
+
+    <button type="submit"
+            class="mt-4 w-full bg-pink-500 hover:bg-pink-400 text-white font-semibold py-3 rounded-md transition">
+      Subscribe
+    </button>
+  </form>
+
+  <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-6">
+    No spam. Unsubscribe anytime.
+  </p>
+</section>

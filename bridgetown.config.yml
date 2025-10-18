@@ -29,16 +29,16 @@ template_engine: erb
 # If you're using esbuild for frontend assets, edit `esbuild.config.js` to
 # update `publicPath`.
 
-timezone: America/Chicago
-pagination:
-  enabled: true
+timezone: "Asia/Tokyo"
+# pagination:
+#   enabled: true
 
-# disable pages from the 2024 static site
-exclude:
-- about
-- videos
+# disable pages from building
+# exclude:
+# - about
+# - videos
 
-# disable blog posts from the origional 2023 site builder
-collections:
-  posts:
-    output: false
+# disable collections
+# collections:
+#   posts:
+#     output: false

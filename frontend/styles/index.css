@@ -1,0 +1,65 @@
+/* If you need to add @import statements, do so up here */
+
+@import "jit-refresh.css"; /* triggers frontend rebuilds */
+
+/* Set up Tailwind imports */
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* ───────────────────────────────
+   Typography / Prose customization
+   using Josh's styleguide
+──────────────────────────────── */
+@utility prose {
+  /* Base text colors */
+  --tw-prose-body: theme(colors.slate.900);
+  --tw-prose-headings: theme(colors.cyan.600);
+  --tw-prose-bold: theme(colors.cyan.600);
+  --tw-prose-links: theme(colors.pink.600);
+  --tw-prose-quotes: theme(colors.slate.600);
+  --tw-prose-quote-borders: theme(colors.slate.300);
+  --tw-prose-code: theme(colors.cyan.700);
+  --tw-prose-captions: theme(colors.slate.500);
+
+  /* Inline code tweaks */
+  code {
+    &::before,
+    &::after {
+      display: none;
+    }
+    text-wrap: nowrap;
+    color: var(--tw-prose-code);
+  }
+
+  /* Quotes: softer + more readable */
+  blockquote {
+    font-weight: 400;
+    font-style: italic;
+    border-left-width: 3px;
+    padding-left: 1em;
+    color: var(--tw-prose-quotes);
+  }
+
+  /* Links */
+  a {
+    color: var(--tw-prose-links);
+    text-decoration: underline;
+    text-decoration-color: theme(colors.pink.200 / 40%);
+    transition: color 0.2s ease;
+  }
+
+  a:hover {
+    color: theme(colors.pink.500);
+  }
+
+  /* Dark mode overrides */
+  @variant dark {
+    --tw-prose-body: theme(colors.slate.100);
+    --tw-prose-headings: theme(colors.cyan.400);
+    --tw-prose-bold: theme(colors.cyan.400);
+    --tw-prose-links: theme(colors.pink.400);
+    --tw-prose-quotes: theme(colors.slate.300);
+    --tw-prose-quote-borders: theme(colors.slate.600);
+    --tw-prose-code: theme(colors.cyan.300);
+  }
+}

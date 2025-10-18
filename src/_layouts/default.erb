@@ -1,19 +1,37 @@
 <!doctype html>
-<html lang="<%= site.locale %>">
+<html lang="en" class="min-h-full">
   <head>
-    <%= render "head", metadata: site.metadata, title: data.title %>
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  </head>
-  <body class="<%= data.layout %> <%= data.page_class %>">
-    <%= render Shared::Navbar.new(metadata: site.metadata, resource: resource) %>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title><%= (resource&.data&.title || "Josh Around") %></title>
 
-    <main>
+    <%# Bridgetown: link to the compiled CSS & JS bundles %>
+    <link rel="stylesheet" href="<%= asset_path :css %>">
+    <script src="<%= asset_path :js %>" defer></script>
+
+    <%# Let browsers use their preferred color scheme %>
+    <meta name="color-scheme" content="light dark">
+  </head>
+
+  <body class="min-h-screen bg-white text-slate-950 dark:bg-zinc-950 dark:text-zinc-100">
+    <%# Site Title %>
+    <div class="mx-auto max-w-3xl px-6 md:px-3 pt-8 pb-4">
+      <a href="<%= site.base_path || "/" %>"
+         class="text-2xl font-bold tracking-tight text-cyan-600 dark:text-cyan-400">
+        Josh Around
+      </a>
+    </div>
+
+    <%# Main Content %>
+    <main class="mx-auto max-w-3xl px-6 md:px-3 py-6">
       <%= yield %>
     </main>
 
-    <%= render "footer", metadata: site.metadata %>
+    <%# Footer: don't show on the "post" page because the date here could be confused with the publish date %>
+    <% unless data.layout == "post" %>
+      <footer class="mx-auto max-w-3xl px-6 md:px-3 py-6 border-t border-dotted border-zinc-300 dark:border-zinc-700 text-xs text-zinc-600 dark:text-zinc-400">
+        <div>© <%= Time.now.year %> Josh Around · Last updated <%= local_time(format: "%B %e, %Y %H:%M %Z") %></div>
+      </footer>
+    <% end %>
   </body>
 </html>
