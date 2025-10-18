@@ -2,6 +2,7 @@
 layout: post
 title: My next language learning challenge
 date: 2025-10-18 17:56:18 +0900
+slug: my-next-language-learning-challenge-fall-2025
 ---
 
 ### Background
