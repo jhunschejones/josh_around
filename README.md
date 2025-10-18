@@ -42,3 +42,9 @@ Together, the **slate / cyan / pink** palette creates a clean, balanced Tokyo mi
       patreon.html.erb     # Patreon page
       404.html.erb
       500.html.erb
+
+## Gotchas
+- Use `/contact.html` as the permalink to get a static page that is rendered as `/contact` in production.
+- Set the `slug:` manually for each blog in the head info so that we're not guessing. You can run the `bin/check_post_slugs` helper script to check for duplicates across all posts 🙏🏻
+- The anchor link behavior of posts is implemented in JS so that it works on mobile where there isn't a hover option.
+- The footer is conditionally rendered at build time and does not show up on the post page

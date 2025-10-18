@@ -1,0 +1,127 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+# check_slugs.rb
+# Scans src/_posts (or a given directory) and ensures:
+#  1) each file has a slug
+#  2) all slug values are unique
+#
+# Primary method: read YAML front matter and look for 'slug'.
+# Fallback: first line in the file that looks like `slug: ...`.
+
+require "yaml"
+require "find"
+
+POST_DIR = ARGV[0] || "src/_posts"
+
+abort "Error: Directory '#{POST_DIR}' not found." unless Dir.exist?(POST_DIR)
+
+SlugInfo = Struct.new(:file, :slug, :multiple_slug_lines, :empty_slug, keyword_init: true)
+
+def extract_front_matter(content)
+  # Match YAML front matter: starts with --- on its own line, ends with --- (or ...)
+  # This is conservative and should work for Bridgetown/Jekyll-style posts.
+  if content =~ /\A---\s*\n(.*?)\n(?:---|\.\.\.)\s*\n/m
+    $1
+  else
+    nil
+  end
+end
+
+def extract_slug_from_front_matter(front_matter)
+  return nil if front_matter.nil?
+  data = YAML.safe_load(front_matter, permitted_classes: [], aliases: false) rescue nil
+  return nil unless data.is_a?(Hash)
+  val = data["slug"]
+  return nil if val.nil?
+  val = val.to_s.strip
+  val.empty? ? "" : val
+end
+
+def extract_first_line_slug(content)
+  # Find the FIRST line that starts with `slug:` (allow leading spaces)
+  line = content.each_line.find { |l| l.match?(/^\s*slug:\s*/) }
+  return nil unless line
+  value = line.sub(/^\s*slug:\s*/, "").rstrip
+  value
+end
+
+def analyze_file(path)
+  content = File.read(path)
+
+  # Count all slug-looking lines anywhere (helps flag multiple definitions)
+  slug_line_count = content.each_line.count { |l| l.match?(/^\s*slug:\s*/) }
+
+  fm = extract_front_matter(content)
+  slug = extract_slug_from_front_matter(fm)
+
+  if slug.nil? # no slug in FM; fallback to first slug line anywhere
+    slug = extract_first_line_slug(content)
+  end
+
+  empty_slug = slug.is_a?(String) && slug.strip.empty?
+  SlugInfo.new(
+    file: path,
+    slug: slug,
+    multiple_slug_lines: slug_line_count > 1,
+    empty_slug: empty_slug
+  )
+end
+
+files = []
+Find.find(POST_DIR) do |path|
+  next unless File.file?(path)
+  files << path
+end
+files.sort!
+
+results = files.map { |f| analyze_file(f) }
+
+missing_or_empty = results.select { |r| r.slug.nil? || r.empty_slug }
+multiple_slug    = results.select(&:multiple_slug_lines)
+
+# Build slug => [files]
+slug_map = Hash.new { |h, k| h[k] = [] }
+results.each do |r|
+  next if r.slug.nil? || r.empty_slug
+  slug_map[r.slug] << r.file
+end
+
+duplicates = slug_map.select { |_slug, fs| fs.size > 1 }
+
+puts "Checked #{results.size} file(s) under '#{POST_DIR}'."
+puts
+
+status = 0
+
+unless missing_or_empty.empty?
+  status = 1
+  puts "❌ Files missing a slug (or with empty slug):"
+  missing_or_empty.each { |r| puts "  - #{r.file}" }
+  puts
+end
+
+unless multiple_slug.empty?
+  status = 1
+  puts "⚠️ Files containing multiple 'slug:' lines (first one will be considered):"
+  multiple_slug.each { |r| puts "  - #{r.file}" }
+  puts
+end
+
+unless duplicates.empty?
+  status = 1
+  puts "❌ Duplicate slug values found:"
+  duplicates.each do |slug, fs|
+    puts %Q{Slug: "#{slug}"}
+    puts "Files: "
+    fs.each { |f| puts "  - #{f}" }
+    puts
+  end
+end
+
+if status.zero?
+  puts "✅ All files have a slug and all slugs are unique."
+else
+  puts "❗ Please fix the issues above. Exiting with non-zero status."
+end
+
+exit status
