@@ -16,7 +16,7 @@
 
 Bridgetown.configure do |config|
   # The base hostname & protocol for your site, e.g. https://example.com
-  url ""
+  url "https://www.josharound.com"
 
   # Available options are `erb` (default), `serbea`, or `liquid`
   template_engine "erb"
@@ -26,7 +26,7 @@ Bridgetown.configure do |config|
   # See list of timezone values here:
   # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   #
-  # timezone "America/Los_Angeles"
+  timezone "Asia/Tokyo"
 
   # Add collection pagination features to your site. Documentation here:
   # https://www.bridgetownrb.com/docs/content/pagination
@@ -39,7 +39,7 @@ Bridgetown.configure do |config|
   # configured separately under the `collections` key. Documentation here:
   # https://www.bridgetownrb.com/docs/content/permalinks
   #
-  # permalink "simple"
+  permalink "/:categories/:year/:title.*"
 
   # Optionally host your site off a path, e.g. /blog. If you set this option,
   # ensure you use the `relative_url` helper for all links and assets in your HTML.
