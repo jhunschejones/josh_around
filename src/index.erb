@@ -11,18 +11,18 @@ title: Josh Around
   <% site.collections.posts.resources.sort_by(&:date).reverse.each do |post| %>
     <li class="py-3">
       <div class="flex flex-wrap items-baseline gap-x-3">
-        <span class="w-28 shrink-0 tabular-nums text-zinc-600 dark:text-zinc-400 text-sm">
+        <span class="w-28 shrink-0 tabular-nums j-text-gray text-sm">
           <%= post.date.strftime("%Y-%m-%d") %>
         </span>
         <a href="<%= post.relative_url %>"
-           class="underline decoration-1 text-pink-600 dark:text-pink-400 hover:no-underline">
+           class="underline decoration-1 j-text-pink hover:no-underline">
           <%= post.data.title || post.basename_without_ext %>
         </a>
       </div>
 
       <% excerpt = (post.data.description || post.data.excerpt || post.excerpt rescue nil) %>
       <% if excerpt && excerpt.to_s.strip != "" %>
-        <p class="mt-1 text-sm text-zinc-700 dark:text-zinc-300">
+        <p class="mt-1 text-sm j-text-light-gray">
           <%= excerpt %>
         </p>
       <% end %>

@@ -9,7 +9,7 @@ layout: default
     </h1>
     <% if resource.date %>
       <time datetime="<%= resource.date.iso8601 %>"
-            class="block text-sm text-zinc-600 dark:text-zinc-400">
+            class="block text-sm j-text-gray">
         <%= resource.date.strftime("%B %e, %Y") %>
       </time>
     <% end %>
@@ -19,9 +19,9 @@ layout: default
     <%= yield %>
   </section>
 
-  <footer class="mt-8 pt-4 border-t border-dotted border-zinc-300 dark:border-zinc-700 text-sm text-zinc-600 dark:text-zinc-400">
+  <footer class="mt-8 pt-4 border-t border-dotted border-zinc-300 dark:border-zinc-700 text-sm j-text-gray">
     <a href="<%= site.base_path || "/" %>"
-       class="underline decoration-1 text-pink-600 dark:text-pink-400 hover:no-underline">
+       class="underline decoration-1 j-text-pink hover:no-underline">
       ← Back to all posts
     </a>
   </footer>

@@ -17,7 +17,7 @@
     <%# Site Title %>
     <div class="mx-auto max-w-3xl px-6 md:px-3 pt-8 pb-4">
       <a href="<%= site.base_path || "/" %>"
-         class="text-2xl font-bold tracking-tight text-cyan-600 dark:text-cyan-400">
+         class="text-2xl font-bold tracking-tight j-text-cyan">
         Josh Around
       </a>
     </div>
@@ -29,7 +29,7 @@
 
     <%# Footer: don't show on the "post" page because the date here could be confused with the publish date %>
     <% unless data.layout == "post" %>
-      <footer class="mx-auto max-w-3xl px-6 md:px-3 py-6 border-t border-dotted border-zinc-300 dark:border-zinc-700 text-xs text-zinc-600 dark:text-zinc-400">
+      <footer class="mx-auto max-w-3xl px-6 md:px-3 py-6 border-t border-dotted border-zinc-300 dark:border-zinc-700 text-xs j-text-gray">
         <div>© <%= Time.now.year %> Josh Around · Last updated <%= local_time(format: "%B %e, %Y %H:%M %Z") %></div>
       </footer>
     <% end %>

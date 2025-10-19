@@ -63,3 +63,30 @@
     --tw-prose-code: theme(colors.cyan.300);
   }
 }
+
+@layer utilities {
+  .j-text-gray {
+    @apply text-zinc-600 dark:text-zinc-400;
+  }
+  .j-text-light-gray {
+    @apply text-zinc-700 dark:text-zinc-300;
+  }
+  .j-text-cyan {
+    @apply text-cyan-600 dark:text-cyan-400;
+  }
+  .j-text-pink {
+    @apply text-pink-600 dark:text-pink-400;
+  }
+
+  /* base button styles with white text */
+  .j-pink-button,
+  .j-indigo-button {
+    @apply inline-block text-white font-semibold py-3 px-6 rounded-md transition;
+  }
+  .j-pink-button {
+    @apply bg-pink-500 hover:bg-pink-400;
+  }
+  .j-indigo-button {
+    @apply bg-indigo-500 hover:bg-indigo-400;
+  }
+}
