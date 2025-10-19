@@ -20,6 +20,8 @@ Run these commands to start local development:
 The dev server will start at [http://localhost:4000](http://localhost:4000).
 Run `bin/bridgetown build` to generate static files in `/output`.
 
+Run the start command with a flag `./bin/bt start --unpublished` to see unpublished posts as well!
+
 ## 🎨 Design Language
 
 The site intentionally leans *minimal and raw HTML-inspired*, with a few modern touches:
