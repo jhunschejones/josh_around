@@ -32,6 +32,10 @@ The site intentionally leans *minimal and raw HTML-inspired*, with a few modern 
 
 Together, the **slate / cyan / pink** palette creates a clean, balanced Tokyo midnight aesthetic that stays readable in both light and dark themes.
 
+There are some custom helper classes defined in `frontend/styles/index.css` to help with consistent buttons and text colors as well.
+
+The site uses the `@tailwindcss/typography` plugin plus custom `prose` styles in `frontend/styles/index.css` to style the elements in a post.
+
 ## 🪶 Structure
 
     src/
@@ -44,7 +48,7 @@ Together, the **slate / cyan / pink** palette creates a clean, balanced Tokyo mi
       500.html.erb
 
 ## Gotchas
-- Use `/contact.html` as the permalink to get a static page that is rendered as `/contact` in production.
-- Set the `slug:` manually for each blog in the head info so that we're not guessing. You can run the `bin/check_post_slugs` helper script to check for duplicates across all posts 🙏🏻
-- The anchor link behavior of posts is implemented in JS so that it works on mobile where there isn't a hover option.
-- The footer is conditionally rendered at build time and does not show up on the post page
+- Use `/contact.html` style permalinks to get a static page that is served as `/contact` in production on GH pages 👍🏻
+- Set the `slug:` manually for each blog in the head info so that we're not guessing. You can run the `bin/check_post_slugs` helper script to check for duplicates across all posts, or the `bin/new_post "Post title"` helper to generate the markdown file for a new post with the necessary header content 🙏🏻
+- The anchor link behavior of posts is implemented in JS so that it works on devices where there isn't a hover option.
+- The footer is conditionally rendered at build time and does not show up on the post page to avoid confusion about dates and timestamps.
