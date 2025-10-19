@@ -23,6 +23,8 @@ In addition to listening to podcasts, there were a bunch of other learning appro
 
 Since moving back to Tokyo, I’ve already tried a few things to jump start the next stage of my Japanese language learning journey. I haven’t been able to get back into podcasts like I was before, but I’ve found some new audio books that I’ve been enjoying. I’ve also really struggled to get back into any kind of SRS study routine with flashcards, but I found that carrying a small notebook with me at work helps encourage me to write down new words I hear in context. My hope is that, in time, I’ll come up with a routine for studying this new slice of Japanese that is directly applicable to my daily job. As an added bonus, interacting with my coworkers at work would then serve as the repetition part of my routine for free!
 
+### 頑張りましょう！
+
 Honestly, the hardest part for me right now is finding the energy and motivation to put in any kind of serious study time after a long day of work. Somehow I was able to do it before back in the U.S., but whether it’s the added stress of navigating a new job and setting up an apartment, or just a general waning enthusiasm for the steep road ahead of me, I’ve been really struggling lately.
 
 Here’s hoping that keeping my ears open and my creativity cranked to 11 will help reveal the next path forward soon 🙏🏻 If you’ve learned a language while working in another country and have any tips you’d like to share, <a href="/contact">send me an email!</a> I’d love to hear your thoughts. ❤️
