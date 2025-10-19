@@ -1,0 +1,49 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "fileutils"
+require "time"
+
+# Usage: bin/new_post "My Next Language Learning Challenge"
+title = ARGV.join(" ").strip
+abort("❌ Please provide a post title") if title.empty?
+
+# Config
+posts_dir = File.expand_path("../src/_posts", __dir__)
+FileUtils.mkdir_p(posts_dir)
+
+# Current date/time in JST
+time = Time.now.getlocal("+09:00")
+date_str = time.strftime("%Y-%m-%d")
+datetime_str = time.strftime("%Y-%m-%d %H:%M:%S %z")
+month_suffix = time.strftime("%b").downcase  # e.g. "oct"
+year_suffix  = time.strftime("%Y")
+
+# Slugify the title
+slug_base = title.downcase.strip.gsub(/[^a-z0-9]+/, "-").gsub(/^-|-$/, "")
+slug = "#{slug_base}-#{month_suffix}-#{year_suffix}"
+
+# Build filename
+filename = "#{date_str}-#{slug_base}.md"
+filepath = File.join(posts_dir, filename)
+
+# Front matter
+front_matter = <<~YAML
+  ---
+  layout: post
+  title: #{title}
+  date: #{datetime_str}
+  slug: #{slug}
+  ---
+YAML
+
+# Write file
+if File.exist?(filepath)
+  abort("⚠️ File already exists: #{filepath}")
+else
+  File.write(filepath, front_matter)
+  puts "✅ Created #{filepath}"
+end
+
+# Open the file in VS Code (or default editor if VS Code not found)
+system("code", filepath) || system("open", filepath)
