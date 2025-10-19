@@ -103,4 +103,7 @@ Bridgetown.configure do |config|
 
   # For more documentation on how to configure your site using this initializers file,
   # visit: https://edge.bridgetownrb.com/docs/configuration/initializers/
+
+  # https://github.com/bridgetownrb/bridgetown-feed
+  init :"bridgetown-feed"
 end
