@@ -36,7 +36,7 @@ Together, the **slate / cyan / pink** palette creates a clean, balanced Tokyo mi
 
 There are some custom helper classes defined in `frontend/styles/index.css` to help with consistent buttons and text colors as well.
 
-The site uses the `@tailwindcss/typography` plugin plus custom `prose` styles in `frontend/styles/index.css` to style the elements in a post.
+The site uses the `@tailwindcss/typography` plugin plus custom `prose` styles in `frontend/styles/index.css` to style the elements in a post. I've also added `@fontsource/ia-writer-quattro` as the site font (the font from iA writer) along with a bit of JS/CSS cleverness in `src/_layouts/default.erb` to try and prevent font-flashing on the first page load.
 
 ## 🪶 Structure
 
