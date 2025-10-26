@@ -1,9 +1,28 @@
 <!doctype html>
-<html lang="en" class="min-h-full">
+<html lang="en" class="min-h-full fonts-loading">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title><%= (resource&.data&.title || "Josh Around") %></title>
+
+    <%# preventing font flash by delaying page load if font's haven't loaded yet %>
+    <%# but only the first page load, using sessionStorage after that (part 1) %>
+    <script>
+      try {
+        if (!sessionStorage.getItem("fontsLoaded")) {
+          document.documentElement.classList.add("fonts-loading");
+        }
+      } catch(e) {}
+    </script>
+    <style>
+      html.fonts-loading body {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+      html:not(.fonts-loading) body {
+        opacity: 1;
+      }
+    </style>
 
     <%# Bridgetown: link to the compiled CSS & JS bundles %>
     <link rel="stylesheet" href="<%= asset_path :css %>">
@@ -36,5 +55,23 @@
         <div>© <%= Time.now.year %> Josh Around · Last updated <%= local_time(format: "%B %e, %Y %H:%M %Z") %></div>
       </footer>
     <% end %>
+
+    <%# preventing font flash by delaying page load if font's haven't loaded yet %>
+    <%# but only the first page load, using sessionStorage after that (part 2) %>
+    <script>
+      if (document.fonts) {
+        document.fonts.ready.then(() => {
+          document.documentElement.classList.remove("fonts-loading");
+          try {
+            sessionStorage.setItem("fontsLoaded", "true");
+          } catch(e) {}
+        });
+
+        // Safety timeout (fallback if something fails)
+        setTimeout(() => {
+          document.documentElement.classList.remove("fonts-loading");
+        }, 1200);
+      }
+    </script>
   </body>
 </html>
