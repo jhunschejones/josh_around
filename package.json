@@ -8,6 +8,7 @@
     "esbuild-dev": "node esbuild.config.js --watch"
   },
   "devDependencies": {
+    "@fontsource/ia-writer-quattro": "^5.2.5",
     "@tailwindcss/postcss": "^4.1.14",
     "@tailwindcss/typography": "^0.5.19",
     "esbuild": "^0.25.11",

@@ -2,9 +2,19 @@
 
 @import "jit-refresh.css"; /* triggers frontend rebuilds */
 
+@import "@fontsource/ia-writer-quattro"; /* default 400 */
+@import "@fontsource/ia-writer-quattro/400.css";
+@import "@fontsource/ia-writer-quattro/400-italic.css";
+@import "@fontsource/ia-writer-quattro/700.css";
+@import "@fontsource/ia-writer-quattro/700-italic.css";
+
 /* Set up Tailwind imports */
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
+
+@theme {
+  --font-sans: "iA Writer Quattro", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
 
 /* ───────────────────────────────
    Typography / Prose customization
