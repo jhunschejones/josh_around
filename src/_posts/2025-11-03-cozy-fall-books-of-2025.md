@@ -4,6 +4,7 @@ title: Cozy fall books of 2025
 date: 2025-11-03 10:38:54 +0900
 slug: cozy-fall-books-of-2025-nov-2025
 published: true
+excerpt: It's official. I've fallen down what is possibly the most friendly of reading rabbit-holes.
 ---
 
 Well, it's official. I've fallen down what is possibly the most friendly of reading rabbit-holes: cozy non-fiction.

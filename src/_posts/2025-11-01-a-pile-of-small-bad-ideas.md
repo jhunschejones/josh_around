@@ -4,6 +4,7 @@ title: A pile of small, bad ideas
 date: 2025-11-01 14:07:21 +0900
 slug: a-pile-of-small-bad-ideas-nov-2025
 published: true
+excerpt: One could even argue that the final result of all this puttering isn't going to teach me a prolific amount of vocabulary, so was the point of putting in all that time?
 ---
 
 This week started out like any other since my move to Tokyo. As usual, I did my best to make progress on probably too many goals, obstacles arose, I persisted, and looking back, it went alright.

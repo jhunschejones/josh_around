@@ -3,6 +3,8 @@ layout: post
 title: My next language learning challenge
 date: 2025-10-18 17:56:18 +0900
 slug: my-next-language-learning-challenge-oct-2025
+published: true
+excerpt: Surrounded by yet another new environment, my language learning approach is going to have to change again as well.
 ---
 
 ### Background
